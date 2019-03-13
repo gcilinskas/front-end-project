@@ -1,0 +1,421 @@
+@import "styles";
+
+*{
+	padding:0;
+	margin:0;
+	box-sizing: border-box;
+	text-decoration: none;
+	list-style-type:none;
+}
+@font-face {
+    font-family: league-gothic;
+    src: url(leaguegothic-regular-webfont.woff);
+}
+
+@font-face {
+    font-family: RobotoSlab-Bold;
+    src: url(RobotoSlab-Bold.ttf);
+}
+
+@font-face{
+	font-family: Roboto;
+	src:url(RobotoSlab-Regular-webfont.woff);
+}
+/************************************* NAVIGATION ******************************************/
+
+@include navigationFull;
+
+/************************************* HEADER *********************************************/
+
+.headerSection{
+	height: 700px;
+	background-image: url("img/team-header.png");
+	background-size: cover;
+	background-repeat: no-repeat;
+	z-index: -999;
+}
+.headerSectionDots {
+	height: 700px;
+	content: '';
+	display: block;
+	position: absolute;
+	left: 0;
+	right: 0;
+	top: 0;
+	bottom: 0;
+	background-image: -webkit-linear-gradient(-90deg,    transparent 0%,    transparent 80%, #1b1e2d 30%, #1b1e2d 100%),
+    -webkit-linear-gradient(  0deg, rgba(0,0,0,.1) 0%, rgba(0,0,0,.1) 30%, #1b1e2d 30%, #1b1e2d 100%);
+	background-size:.30em .30em;
+}
+
+.header{
+	align-items:flex-start;
+}
+
+.header h1{
+	max-width:600px;
+	text-align:left;
+}
+
+
+@include hrAnimation;
+@include pAnimation;
+@include h1Animation;
+@include buttonHover;
+
+/************************************* FIRST SECTION *********************************************/
+
+.firstSection{
+	text-align: center;
+	background-color: $pilka;
+}
+
+.first{
+	padding:10px;
+	height: 562px;
+	background-color: #fff;
+	top:-50px;
+	z-index:10;
+	position: relative;
+
+	h1{
+		color:$melyna;
+		padding:0;
+		font-size:45px;
+	}
+	img{
+		width:200px;
+		margin:0 10px;
+	}
+}
+
+.team-logos{
+	span{
+		margin-top:15px;
+		margin-bottom:15px;
+	}
+}
+
+.google{
+	position: relative;
+	top:20px;
+}
+
+
+
+#first-p{
+	max-width: 150px;
+	text-decoration: none;
+	position: relative;
+	padding:0;
+	margin:auto;
+}
+
+
+#first-p:after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  right:50%;
+  left:50%;
+  width: 0%;
+  border-bottom: 2px solid #3366FF;
+  transition: 0.4s;
+}
+
+#first-p:hover:after {
+  width: 100%;
+  right: 0;
+  left:0;
+}
+
+/************************************* SECOND SECTION *********************************************/
+
+.secondSection{
+	height: 700px;
+	//background-color: $melyna;
+	position: relative;
+	background: linear-gradient( rgba(33, 38, 45, 0.9), rgba(33, 38, 45, 0.9) ), url("img/team-slider-1.jpg");
+	background-position: top;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+
+.teamSliderBackgrounds{
+	position: absolute;
+    right: 0;
+    bottom: 0;
+    min-width: 100%; 
+    min-height: 100%;
+    width:100%;
+    height: 100%;
+}
+
+.arrow{
+	width:20px;
+	cursor:pointer;
+	transition:0.4s;
+	position: relative;
+
+}
+
+
+
+.second{
+	padding-top:60px;
+	justify-content:flex-start;
+	align-items:flex-start;
+	flex-direction:row;
+}
+
+.arrowSection{
+	flex-basis:0;
+	flex-grow:1;
+}
+
+.titleSection{
+	flex-basis:0;
+	flex-grow:3;
+	height: 2160px;
+	overflow: hidden;	
+	transition:0.4s;
+}
+
+.titleSectionContainer{
+	overflow:hidden;
+	transition:0.4s;
+	position: relative;	
+	height: 540px;
+}
+
+.titleSections h2{
+	@include basic-h1;
+	font-size:45px;
+	padding:0;
+	padding-left:30px;
+	padding-bottom:10px;
+}
+
+.titleSections p{
+	@include basic-h1;
+	font-size:30px;
+	padding:0;
+	padding-left:30px;
+	color:$raudona;
+}
+
+.titleSections{
+	opacity:0.4;
+	transition:0.4s;
+}
+
+.titleSection1{
+	opacity:1!important;
+}
+
+.titleOn{
+	opacity:1;
+	transition:0.4s;
+}
+
+.teamSlider p{
+	@include basic-p;
+	padding:0;
+	color:$text-dark;
+}
+
+.teamSliderRight{
+	padding:30px;
+}
+
+.team-slider-content-section{
+	display: flex;
+	flex-basis:0;
+	flex-grow:10;
+	flex-direction:row;
+	z-index:999;
+}
+
+
+.teamSliderLeft{
+	transition:0.4s;
+}
+
+.teamSliderRight{
+	display: flex;
+	flex-direction:column;
+	position: relative;
+	background-color: #fff;
+	height: 600px;
+	width:400px;
+	justify-content:flex-start;
+	align-items:flex-start;
+	overflow:hidden;
+	transition:0.4s;
+	h1{
+		margin-top:40px;
+		color:#21262D;
+		padding-bottom:20px;
+	}
+
+	.p-seventh{
+		color: #4f5a60;
+		padding-bottom:20px;
+	}
+}
+
+.buttonHeaderContainer{
+	z-index:99;
+}
+
+.secondRightSlider{
+	z-index:10;
+	background-color: #fff;
+	position: absolute;
+	height:7200px;
+	width: 350px;
+	transition:0.4s;
+	overflow: hidden;	
+}
+
+.secondRightSlider ul li{
+	height:600px;
+}
+
+.teamSliderLeft{
+	img{
+		
+		height: 600px;
+		width:600px; 
+		position: relative;
+		left:-100px;
+	}
+	max-width: 400px;
+	overflow: hidden;
+}
+
+.ts{
+	flex-basis:0;
+	flex-grow:1;
+}
+
+
+.titleSections{
+	height: 180px;
+	
+}
+
+
+.thirdSection{
+	height: 330px;
+	background-color: $pilka;
+	position: relative;
+	z-index:99;
+}
+
+.third{
+	z-index:999;
+	h1{
+		padding:0;
+		font-size:45px;
+		color:$melyna;
+		z-index:99;
+	}
+}
+
+.third-team-p{
+	padding:0;
+	color:$text-dark;
+	text-align: center;
+	padding-bottom:25px;
+	z-index:99;
+}
+
+.secondSkew{
+	background-color: $pilka;
+	position: absolute;
+    top: -20%;
+    left: 0;
+    height: 350px;
+    z-index:-99;
+    width: 100%;
+    transform: skewY(-6deg);
+    transform-origin: top left;
+    transition:0.4s;
+    z-index:9;
+}
+
+
+
+
+@include footerFull;
+
+.footerSection{
+	margin-top:0;
+}
+
+
+
+
+/**************************** RESPONSIV SECTION *******************************/
+
+@include footerFullResponsive;
+
+@media only screen and (max-width: 1100px){
+
+	.teamSliderLeft{
+		display: none;
+	}
+		.secondRightSlider{
+		width:100%;
+		padding-right:50px;
+	}
+}
+
+
+
+
+@media only screen and (max-width: 800px){
+
+	.team-logos{
+		span{
+			display: flex;
+			flex-direction:column;
+		}
+	}
+
+	.firstSection{
+		height: 1250px;
+	}
+
+	.first{
+		width:95%;
+		height: 1250px;
+		img{
+			margin-top:20px;
+			margin-bottom:20px;
+		}
+	}
+	.teamSliderLeft{
+		display: none;
+	}
+
+	.titleSectionContainer{
+		height: 180px;
+	}
+
+	.second{
+		flex-direction:column;
+		width:95%;
+	}
+
+	.team-slider-content-section{
+		width:100%;
+	}
+	.secondRightSlider{
+		width:100%;
+	}
+
+}
+

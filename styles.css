@@ -1,0 +1,107 @@
+.headerArrow {
+  background-color: #c51017;
+  width: 60px;
+  height: 60px;
+  line-height: 70px;
+  border-radius: 0 6px 6px 0; }
+
+.basic-arrow-img {
+  width: 24px;
+  transform: matrix(1, 0, 0, 1, 0, 0); }
+
+.section {
+  max-width: 1150px;
+  width: 100%;
+  margin: auto;
+  height: inherit;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center; }
+
+.basic-h1 {
+  font-family: league-gothic,league gothic,sans-serif;
+  text-transform: uppercase;
+  font-size: 60px;
+  color: white;
+  letter-spacing: .075em;
+  padding: 0 60px 60px 60px; }
+
+.basic-hr {
+  background-color: #ed1b24;
+  margin: 0 60px 60px 60px;
+  width: 70px;
+  border: none;
+  height: 5px; }
+
+.basic-hr-header {
+  background-color: #ed1b24;
+  margin: 0 60px 60px 60px;
+  border: none;
+  height: 5px;
+  animation-name: basicHrHeader;
+  animation-duration: 0.5s;
+  animation-delay: 0.5s;
+  animation-fill-mode: forwards; }
+
+.basic-p {
+  color: #c5d3db;
+  font-family: Roboto, sans-serif;
+  font-size: 16px;
+  padding: 0 60px 60px 60px;
+  max-width: 600px;
+  text-align: left; }
+
+.basic-p-header {
+  color: #c5d3db;
+  font-family: Roboto, sans-serif;
+  font-size: 16px;
+  padding: 0 60px 60px 60px;
+  max-width: 600px;
+  text-align: left;
+  opacity: 0;
+  animation-name: BasicPHeaderMatrix;
+  animation-duration: 0.6s;
+  animation-delay: 0.9s;
+  animation-fill-mode: forwards;
+  position: absolute;
+  height: 100px; }
+
+.basic-arrow-img {
+  width: 24px;
+  transform: matrix(1, 0, 0, 1, 0, 0); }
+
+.basic-button {
+  margin-left: 60px;
+  border-radius: 6px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  background-color: #ed1b24;
+  text-align: center;
+  padding: 0 0 0 15px;
+  font-family: league-gothic,league gothic,sans-serif;
+  text-transform: uppercase;
+  color: white;
+  font-size: 24px;
+  letter-spacing: .075em; }
+  .basic-button p {
+    margin-right: 15px; }
+
+.section h1 {
+  font-family: league-gothic,league gothic,sans-serif;
+  text-transform: uppercase;
+  font-size: 60px;
+  color: white;
+  letter-spacing: .075em;
+  padding: 0 60px 60px 60px; }
+
+.section hr {
+  background-color: #ed1b24;
+  margin: 0 60px 60px 60px;
+  width: 70px;
+  border: none;
+  height: 5px; }
+
+/*# sourceMappingURL=styles.css.map */

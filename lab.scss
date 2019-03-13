@@ -1,0 +1,374 @@
+@import "styles";
+
+*{
+	padding:0;
+	margin:0;
+	box-sizing: border-box;
+	text-decoration: none;
+	list-style-type:none;
+}
+@font-face {
+    font-family: league-gothic;
+    src: url(leaguegothic-regular-webfont.woff);
+}
+
+@font-face{
+	font-family: Roboto;
+	src:url(RobotoSlab-Regular-webfont.woff);
+}
+/************************************* NAVIGATION ******************************************/
+
+@include navigationFull;
+
+/************************************* HEADER *********************************************/
+
+.headerSection{
+	height: 700px;
+	background-image: url("img/lab-header.png");
+	background-size: cover;
+	background-repeat: no-repeat;
+	z-index: -999;
+}
+.headerSectionDots {
+	height: 700px;
+	content: '';
+	display: block;
+	position: absolute;
+	left: 0;
+	right: 0;
+	top: 0;
+	bottom: 0;
+	background-image: -webkit-linear-gradient(-90deg,    transparent 0%,    transparent 80%, #1b1e2d 30%, #1b1e2d 100%),
+    -webkit-linear-gradient(  0deg, rgba(0,0,0,.1) 0%, rgba(0,0,0,.1) 30%, #1b1e2d 30%, #1b1e2d 100%);
+	background-size:.30em .30em;
+}
+
+.header{
+	align-items:flex-start;
+}
+
+.header h1{
+	max-width:600px;
+	text-align:left;
+}
+
+@include hrAnimation;
+@include pAnimation;
+@include h1Animation;
+@include buttonHover;
+
+/************************************* FIRST SECTION *********************************************/
+
+.firstSection{
+	height: 420px;
+	background-color: $pilka;
+}
+
+.first{
+	flex-direction:row;
+}
+
+.first1{
+	flex-basis:0;
+	flex-grow:2;
+	background-color: #fff;
+	height: 400px;
+	margin-top:-97px;
+	z-index:9;
+	p{
+		color:$text-dark;
+	}
+	h1{
+		font-size:45px;
+		padding-top:60px;
+		padding-bottom:40px;
+		color:$melyna;
+	}
+	hr{
+		margin-bottom:40px;
+	}
+}
+
+.first2{
+	margin-top:-60px;
+	border-top:3px solid $raudona;
+	height: 360px;
+	flex-basis:0;
+	flex-grow:1.2;
+	background-color: $melyna;
+	display: flex;
+	flex-direction:column;
+	justify-content:flex-start;
+	align-items:flex-start;
+	h1{
+		font-size:30px;
+		padding-bottom:15px;
+		padding-top:60px;
+	}
+}
+	.first-p{
+		color:$text-light;
+		padding-bottom:15px;
+		padding-left:60px;
+	}
+
+
+
+/************************************* SECOND SECTION *********************************************/
+
+.secondSection{
+	height: 150vh;
+	background-color: $pilka;
+}
+
+.second{
+
+	h1{
+		color:$melyna;
+		padding-left:0;
+		padding-bottom:15px;
+		font-size:45px;
+	}
+	h2{
+		padding-bottom:15px;
+	}
+
+	p{
+		color:$text-dark;
+		padding-left:0;
+	}
+}
+
+.second1, .second2, .second3{
+	flex-direction:row;
+	height: 400px;
+	flex-basis:0;
+	flex-grow:1;
+}
+
+.secondLeft{
+	flex-basis:0;
+	flex-grow:1;
+	height: inherit;
+}
+
+.secondRight{
+	flex-basis:0;
+	flex-grow:1;
+	background-color: #fff;
+	height: inherit;
+	padding:60px;
+	p{
+		padding-right:15px;
+	}
+}
+
+.second1Left{
+	background-image: url("img/lab1.png");
+	background-position: center;
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+
+.second2Left{
+	background-image: url("img/lab2.png");
+	background-position: center;
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+
+
+.second3Left{
+	background-image: url("img/lab3.png");
+	background-position: center;
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+
+.thirdSection{
+	height: 666px;
+	background-color: #fff;
+}
+
+.third{
+	display: flex;
+	flex-direction:row;
+	justify-content:space-between;
+	align-items:flex-end;
+	width:100%;
+	height: inherit;
+
+	h1{
+		padding-bottom:15px;
+	}
+	h2{
+		padding-bottom:30px;
+		    font-size: 45px;
+		    color: #c5d3db;
+	}
+	hr{
+		margin-bottom:15px;
+	}
+}
+
+.thirdLeft{
+	 background: linear-gradient( rgba(33, 38, 45, 0.8), rgba(33, 38, 45, 0.8) ), url('img/lab-1.png');
+	background-position: center;
+	background-size: cover;
+	background-repeat: no-repeat;
+	height: 600px;
+	width:920px;
+	
+	display: flex;
+	flex-direction:column;
+	justify-content:center;
+	align-items:center
+}
+
+.thirdRight{
+	 background: linear-gradient( rgba(33, 38, 45, 0.8), rgba(33, 38, 45, 0.8) ), url('img/lab-2.png');
+	background-position: center;
+	background-size: cover;
+	background-repeat: no-repeat;
+	height: 600px;
+	width:920px;
+
+	display: flex;
+	flex-direction:column;
+	justify-content:center;
+	align-items:center
+
+}
+
+
+.fourthSection{
+	height: 380px;
+	background-color: $pilka;
+}
+
+.fourth{
+	position: relative;
+
+	padding:60px;
+	background-color: #fff;
+	height: 350px;
+	margin-top:-80px;
+	align-items:flex-start;
+	h1{
+		color:$melyna;
+		padding-left:0;
+		padding-bottom:15px;
+		font-size:45px;
+	}
+	p{
+		color:$text-dark;
+		padding:0;
+		max-width:100%;
+	}
+}
+
+@include footerFull;
+
+.footerSection{
+	margin-top:0;
+}
+
+/**************************** RESPONSIVE SECTION *******************************/
+
+@include footerFullResponsive;
+
+
+@media only screen and (max-width: 1000px){
+
+	.first1{
+		h1{
+			padding-right:15px;
+		}
+	}
+}
+
+@media only screen and (max-width: 800px){
+	.firstSection{
+		height: 650px;
+	}
+	.first{
+		flex-direction:column;
+		width:95%;
+	}
+	.first1{
+		width:100%;
+		flex-grow:1;
+	}
+	.first2{
+		width:100%;
+		flex-grow:1;
+		z-index:9;
+	}
+
+	.secondLeft{
+		display: none;
+	}
+
+	.second{
+		width:95%;
+	}
+
+	.second1, .second2, .second3{
+	height: 450px;
+	}
+
+	.secondSection{
+		height: 160vh;
+		background-color: $pilka;
+	}
+
+	.third{
+		flex-direction:column;
+	}
+
+	.thirdLeft{
+		margin-bottom:10px;
+	}
+
+	.thirdLeft, .thirdRight{
+		height: 400px;
+		width:100%;
+	}
+
+	.thirdSection{
+		height: 750px;
+	}
+
+	.fourth{
+		margin-top: -30px; 
+		width:95%;
+	}
+
+
+}
+
+@media only screen and (max-width: 600px){
+	.firstSection{
+		height: 800px;
+	}
+	.first1{
+	
+	}
+
+	.first2{
+		flex-grow:0.7;
+	}
+
+	.fourth{
+		height: 470px;
+	}
+
+	.fourthSection{
+		height: 500px;
+	}
+	.dividedH1{
+		display: flex;
+		flex-direction:row;
+	}
+
+}
